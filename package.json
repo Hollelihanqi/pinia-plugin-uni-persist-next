@@ -18,6 +18,7 @@
   "scripts": {
     "dev": "tsup --watch",
     "build": "tsup",
+    "release": "release-it",
     "prepublishOnly": "pnpm build"
   },
   "keywords": [
@@ -29,6 +30,14 @@
   ],
   "author": "1401009231@qq.com",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hollelihanqi/pinia-plugin-uni-persist-next.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Hollelihanqi/pinia-plugin-uni-persist-next/issues"
+  },
+  "homepage": "https://github.com/Hollelihanqi/pinia-plugin-uni-persist-next#readme",
   "packageManager": "pnpm@10.19.0",
   "peerDependencies": {
     "pinia": ">=3.0.4",
@@ -36,8 +45,10 @@
   },
   "devDependencies": {
     "@dcloudio/types": "^3.4.28",
+    "@release-it/conventional-changelog": "^10.0.4",
     "@types/node": "^25.0.1",
     "pinia": "^3.0.4",
+    "release-it": "^19.2.1",
     "tsup": "^8.5.1",
     "typescript": "^5.9.3"
   }

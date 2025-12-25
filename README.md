@@ -1,4 +1,4 @@
-# pinia-plugin-uni-persist
+# pinia-plugin-uni-persist-next
 
 专为 **UniApp** 打造的 Pinia 持久化插件。
 
@@ -18,14 +18,14 @@
 使用 pnpm (推荐):
 
 ```bash
-pnpm add pinia-plugin-uni-persist
+pnpm add pinia-plugin-uni-persist-next
 ```
 
 或者 npm/yarn:
 
 ```bash
-npm install pinia-plugin-uni-persist
-# yarn add pinia-plugin-uni-persist
+npm install pinia-plugin-uni-persist-next
+# yarn add pinia-plugin-uni-persist-next
 ```
 
 ## 🚀 快速上手
@@ -35,7 +35,7 @@ npm install pinia-plugin-uni-persist
 ```typescript
 import { createSSRApp } from "vue";
 import { createPinia } from "pinia";
-import { createUniPersistPlugin } from "pinia-plugin-uni-persist"; // 引入插件
+import { createUniPersistPlugin } from "pinia-plugin-uni-persist-next"; // 引入插件
 import App from "./App.vue";
 
 export function createApp() {
@@ -103,7 +103,7 @@ export const useUserStore = defineStore(
 ## 🛠 工具函数
 
 ```typescript
-import { clearStore, clearAll } from "pinia-plugin-uni-persist";
+import { clearStore, clearAll } from "pinia-plugin-uni-persist-next";
 
 // 清除特定 key
 clearStore("app_storage_user_key");
