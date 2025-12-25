@@ -1,4 +1,21 @@
-node_modules
-dist
-.DS_Store
-*.log
+# Angular specific
+/dist/
+/out-tsc/
+/tmp/
+/coverage/
+/e2e/test-output/
+
+# Node modules and dependency files
+/node_modules/
+/package-lock.json
+/yarn.lock
+
+# Environment files
+/.env
+
+# Angular CLI and build artefacts
+/.angular-cli.json
+/.ng/
+
+# TypeScript cache
+*.tsbuildinfo
