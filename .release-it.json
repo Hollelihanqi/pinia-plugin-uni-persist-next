@@ -2,7 +2,9 @@
   "git": {
     "commitMessage": "chore: release v${version}",
     "tag": false,
-    "requireCleanWorkingDir": false
+    "requireCleanWorkingDir": false,
+    "commit": true,
+    "push": true
   },
   "npm": {
     "publish": true
@@ -17,6 +19,8 @@
     }
   },
   "hooks": {
-    "before:init": ["pnpm build"]
+    "before:init": ["pnpm build"],
+    "after:bump": "echo 版本号已更新",
+    "after:release": "echo 发布成功，准备提交到 Git"
   }
 }
